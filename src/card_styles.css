@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+
+.more-card {
+    box-shadow: 0 8px 16px 0 #46e1f591 /*rgba(0,0,0,0.5)*/, inset 0 0px 8px 0 #46e1f591;
+    font-family: 'Trebuchet MS', sans-serif;
+    transition:0.3s;
+    background-color: #07213a;
+}
+
+.more-card:hover {
+    box-shadow: 4px 12px 16px 0 #46e1f591/*rgba(0,0,0,0.5)*/, inset 0 0px 8px 0 #46e1f591;
+}
+
+.horizontal-line {
+    height: 0px; 
+    border-color: #46E0F5; 
+    border-bottom-style: solid; 
+    border-width: 1px;
+    box-shadow: 0 1px 3px 0 #46e1f591, 0 -1px 3px 0 #46e1f591;
+}
+
+.vertical-line-container {
+    display: flex;
+    width: 0px;
+    height: auto;
+}
+
+.vertical-line {
+    width: 0px;
+    border-color: #46E0F5; 
+    border-left-style: solid; 
+    border-width: 1px;
+    box-shadow: 1px 0 3px 0 #46e1f591, -1px 0 3px 0 #46e1f591;
+    /* position: absolute; */
+}
+
+.sunken-attribute {
+    border: 1px solid #46e1f591;
+    border-radius: 5px;
+    background-color: #B4D8E8;
+    box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 -1px 4px rgba(0, 0, 0, 0.5), 1px 0 4px rgba(0, 0, 0, 0.5) , -1px 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.red-outline {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #7F0907;
+    -webkit-text-fill-color: white;
+    /*text-shadow: -1px 1px 2px #7F0907, 1px 1px 2px #7F0907, 1px -1px 2px #7F0907, -1px -1px 2px #7F0907;*/
+}
+
+.medium-card {
+    width: 15rem;
+}
+
+.sci-fi-card { 
+    background-color: #07213a; 
+    border-style: solid; 
+    border-color: #46E0F5; 
+    border-width: 3px;
+}
+
+.btn-sci-fi {
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 -1px 4px rgba(0, 0, 0, 0.5), 1px 0 4px rgba(0, 0, 0, 0.5) , -1px 0 4px rgba(0, 0, 0, 0.5);
+    background-color: #B4D8E8;
+    border-color: #B4D8E8;
+}
+
+.btn-sci-fi:hover {
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 -1px 4px rgba(0, 0, 0, 0.5), 1px 0 4px rgba(0, 0, 0, 0.5) , -1px 0 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 4px 0 #46e1f55e, 4px -4px 4px 0 #46e1f55e, -4px 4px 4px 0 #46e1f55e, -4px -4px 4px 0 #46e1f55e, inset 0 0px 4px 0 #46e1f55e;
+    background-color: #B4D8E8;
+    border-color: #B4D8E8;
+}
+
+.btn-sci-fi:focus, .btn-sci-fi.focus {
+    box-shadow: 4px 4px 4px 0 #46e1f55e, 4px -4px 4px 0 #46e1f55e, -4px 4px 4px 0 #46e1f55e, -4px -4px 4px 0 #46e1f55e, inset 0 0px 4px 0 #46e1f55e;
+}
+
+.btn-sci-fi.disabled, .btn-sci-fi:disabled {
+    background-color: #ff1e00a4;
+    border-color: #ff1e00a4;
+}
+
+.btn-sci-fi:active, .btn-sci-fi.active,
+.show > .btn-sci-fi.dropdown-toggle {
+    background-color: #B4D8E8;
+    background-image: none;
+    border-color: #B4D8E8;
+}
+
+.popover-custom-color {
+    background: #07213a;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 -1px 4px rgba(0, 0, 0, 0.5), 1px 0 4px rgba(0, 0, 0, 0.5) , -1px 0 4px rgba(0, 0, 0, 0.5);
+    -webkit-text-fill-color: white;
+    box-shadow: 0 4px 16px 0 #46e1f591, inset 0 0px 8px 0 #46e1f591;
+    border-color: #46e1f591;
+}
+
+.popover-custom-color .arrow::after {
+    border-bottom-color:#46e1f591;
+}
+
+.ship-size-container {
+    display: flex;
+    justify-content: center;
+}
