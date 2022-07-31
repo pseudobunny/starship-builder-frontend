@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../card_styles.css'
 
 interface CardBodyProps {
     cardBody?: React.ReactNode;

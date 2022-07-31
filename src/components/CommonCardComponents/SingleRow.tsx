@@ -8,7 +8,7 @@ interface ChildAttributes {
 
 const SingleRow: React.FC<ChildAttributes> = ({first}) => {
   return (
-    <div className="row justify-content-center">
+    <div className="row justify-content-center pb-2">
         <div className="col-auto">
             <div className="text-center">
                 {first}

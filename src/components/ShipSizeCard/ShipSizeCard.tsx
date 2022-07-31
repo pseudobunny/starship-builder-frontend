@@ -1,9 +1,9 @@
-import React, {useState, useRef} from 'react'
+//import React, {useState, useRef} from 'react'
 import "../../card_styles.css"
 
-import Overlay from 'react-bootstrap/Overlay'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Button from 'react-bootstrap/Button'
-import Tooltip from 'react-bootstrap/Tooltip'
+import Popover from 'react-bootstrap/Popover'
 
 import HorizontalCardLine from '../CardDividers/HorizontalCardLine'
 import CardTitle from '../CommonCardComponents/CardTitle'
@@ -23,12 +23,10 @@ interface ShipSizeDetails {
 const ShipSizeCard: React.FC<ShipSizeDetails> = 
     ({sizeID, name, actlMod, length, weight, calcNum})  => 
 {
-  const [show, setShow] = useState(false)
-  const target = useRef(null)
-
-  const popoverBody = () =>
-    <Tooltip id="tooltip-bottom">
-        <PopoverMediumCardBase cardBody = {
+  const popoverBody = (
+    <Popover id="popover-basic" className = "sci-fi-card p-1">
+        {/*<Popover.Content>*/}
+            <PopoverMediumCardBase cardBody = {
             <div>
                 <CardTitle title={name}/>
                 <SingleRow first={
@@ -59,40 +57,23 @@ const ShipSizeCard: React.FC<ShipSizeDetails> =
                     />
                 }/>
             </div>
-        }/>
-    </Tooltip>
-    ;
+            }/>
+        {/*</Popover.Content>*/}
+    </Popover>
+    );
 
   return (
-    //   <OverlayTrigger
-    //     placement='bottom'
-    //     overlay={popoverBody}
-    //     delay={{show: 100, hide: 100}}
-    //   >
-    //     <Button
-    //       className='btn btn-sci-fi'
-    //     >
-    //     {name}
-    //     </Button>
-    //   </OverlayTrigger>
-    <div>
-        <Button 
-            className='btn btn-sci-fi'
-            ref={target}
-            onMouseEnter={() => setShow(true)}
-            onMouseLeave={() => setShow(false)}
+    <OverlayTrigger
+        placement='bottom'
+        overlay={popoverBody}
+        delay={{show: 100, hide: 100}}
+    >
+        <Button
+        className='btn btn-sci-fi'
         >
         {name}
         </Button>
-        <Overlay
-            ref={target}
-            target={target.current}
-            show={show}
-            placement='right'
-        >
-            {popoverBody}
-        </Overlay>
-    </div>
+    </OverlayTrigger>
   )
 }
 

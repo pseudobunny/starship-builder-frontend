@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
+import './card_styles.css';
 import ShieldCard from './components/ShieldCard/ShieldCard';
 import ShipSizeCard from './components/ShipSizeCard/ShipSizeCard';
 
 function App() {
   return (
-    <div>
+    <div className="back-image">
           {/* <ShipSizeCard
         sizeID={1}
         name = "Tiny"
